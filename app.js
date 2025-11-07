@@ -6,3 +6,6 @@
 
   // Passo 3: Mostrar um valor Booleano (revisão da Aula 1)
   console.log(true);
+
+
+  
