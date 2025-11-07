@@ -63,5 +63,6 @@
   console.log("Valor em USD:", valorEmolar);
   let mensagemFinal = " 500 Euro equivalem a [valorEmDolar] Dólar.";
   console.log(mensagemFinal.replace("[valorEmDolar]", valorEmolar.toFixed(2)));
-  
 
+  
+  
