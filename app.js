@@ -7,9 +7,11 @@
   // Passo 3: Mostrar um valor Booleano (revisão da Aula 1)
   console.log(true);
 
-//
+      // Tarefa na Salaria de Variáveis e Tipos de Dados
+
   const nomeAluno= "João Silva"; // Usando comelCase
   console.log("Nome do Aluno:", nomeAluno);
+
 
   let contador = 0;
   console.log("Contador inicial:", contador);
@@ -51,18 +53,17 @@
   let idadeAtual = 2025 - anoNascimento;
   console.log("Idade atual:", idadeAtual);
 
+  // Trabalho de Casa:
+
   const taxaCambio = 0.92;
-  console.log("taxa de câmbio (EURO para USD):", taxaCambio);
-  const moedaOrigem = "EURO";
-  console.log("Moeda de origem:", moedaOrigem);
-  const moedaDestino = "USD";
-  console.log("Moeda de destino:", moedaDestino);
+  const moedaOrigem = "Euro";
+  const moedaDestino = "Dólar";
 
-  let valorOrigem = "500"; // String
-  let valorEmolar = Number(valorOrigem) * taxaCambio;
-  console.log("Valor em USD:", valorEmolar);
-  let mensagemFinal = " 500 Euro equivalem a [valorEmDolar] Dólar.";
-  console.log(mensagemFinal.replace("[valorEmDolar]", valorEmolar.toFixed(2)));
+  let valorEmEuro = "500"; // Está como String!
 
-  
-  
+  let valorEmDolar = valorEmEuro * taxaCambio; // Conversão implícita para Number
+
+  console.log("Tipo de Valor em Euro:", typeof valorEmEuro); // String
+  console.log("Tipo de Valor em Dólar:", typeof valorEmDolar);// Number
+  let mensagemFinal = "500 Euro equivalem a 460 Dólar.";
+  console.log("Mensagem Final:", valorEmEuro, "euros equivale a", valorEmDolar,"dólar.");
