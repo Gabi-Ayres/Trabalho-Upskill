@@ -51,7 +51,17 @@
   let idadeAtual = 2025 - anoNascimento;
   console.log("Idade atual:", idadeAtual);
 
+  const taxaCambio = 0.92;
+  console.log("taxa de câmbio (EURO para USD):", taxaCambio);
+  const moedaOrigem = "EURO";
+  console.log("Moeda de origem:", moedaOrigem);
+  const moedaDestino = "USD";
+  console.log("Moeda de destino:", moedaDestino);
 
-
-
+  let valorOrigem = "500"; // String
+  let valorEmolar = Number(valorOrigem) * taxaCambio;
+  console.log("Valor em USD:", valorEmolar);
+  let mensagemFinal = " 500 Euro equivalem a [valorEmDolar] Dólar.";
+  console.log(mensagemFinal.replace("[valorEmDolar]", valorEmolar.toFixed(2)));
+  
 
